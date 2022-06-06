@@ -188,5 +188,16 @@
 
     .about__btn {
         margin-bottom: 54px;
+        transition: all 0.3s ease;
+    }
+    
+    .about__btn:hover{ 
+        transform: scale(1.1);
+        opacity: 0.8;
+        transition: 0.3s ease;
+    }
+
+    .about__btn:active {
+        opacity: 0.5;
     }
 }

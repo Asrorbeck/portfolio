@@ -1,7 +1,8 @@
 .hero__container{
     margin-left: 100px;
     .hero__wrapper {
-        width: 697px;
+        max-width: 697px;
+        width: 100%;
         .hero__heading {
             font-family: 'Space Grotesk';
             font-weight: 700;
@@ -49,5 +50,30 @@
     
     .hero__btn:active {
         opacity: 0.5;
+    }
+}
+
+@media only screen and  (max-width: 375px){
+    .hero__container {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .hero__wrapper {
+            max-width: 305px;
+            width: 100%;
+            .hero__heading {
+                font-size: 28px;
+                line-height: 152.7%;
+                margin-bottom: 24px;
+            }
+        }
+        .hero__text{
+            font-size: 16px;
+            margin-bottom: 74px;
+        }
+        .hero__btn {
+            margin-bottom: 60px;
+        }
     }
 }
